@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" id="meta-description">
+    <meta name="keywords" id="meta-keywords">
+    <meta property="og:title" id="og-title">
+    <meta property="og:description" id="og-description">
+    <meta property="og:type" content="website">
+    <title id="page-title"></title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/static/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/static/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/static/assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/static/assets/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#252525">
+</head>
+
+<body>
+    <nav class="top-nav">
+        <div id="theme-toggle" aria-label="Theme toggle">
+            <button id="theme-switch" aria-pressed="false" aria-label="Toggle theme">
+                <svg class="sun-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                    <path
+                        d="M12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3zm0-2c.28 0 .5-.22.5-.5v-3c0-.28-.22-.5-.5-.5s-.5.22-.5.5v3c0 .28.22.5.5.5zm0 13c-.28 0-.5.22-.5.5v3c0 .28.22.5.5.5s.5-.22.5-.5v-3c0-.28-.22-.5-.5-.5zm8.5-6.5h-3c-.28 0-.5.22-.5.5s.22.5.5.5h3c.28 0 .5-.22.5-.5s-.22-.5-.5-.5zm-14 0h-3c-.28 0-.5.22-.5.5s.22.5.5.5h3c.28 0 .5-.22.5-.5s-.22-.5-.5-.5z" />
+                </svg>
+                <svg class="moon-icon" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true">
+                    <path
+                        d="M12 3c.28 0 .5-.22.5-.5v-1c0-.28-.22-.5-.5-.5s-.5.22-.5.5v1c0 .28.22.5.5.5zm0 19c-.28 0-.5.22-.5.5v1c0 .28.22.5.5.5s.5-.22.5-.5v-1c0-.28-.22-.5-.5-.5zm7.5-9.5h1c.28 0 .5-.22.5-.5s-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5s.22.5.5.5zm-16 0h1c.28 0 .5-.22.5-.5s-.22-.5-.5-.5h-1c-.28 0-.5.22-.5.5s.22.5.5.5zm14.94-6.36l.7-.7c.2-.2.2-.51 0-.71-.2-.2-.51-.2-.71 0l-.7.7c-.2.2-.2.51 0 .71.2.2.51.2.71 0zm-13.88 13.88l.7-.7c.2-.2.2-.51 0-.71-.2-.2-.51-.2-.71 0l-.7.7c-.2.2-.2.51 0 .71.2.2.51.2.71 0zm13.88 0c.2-.2.2-.51 0-.71l-.7-.7c-.2-.2-.51-.2-.71 0-.2.2-.2.51 0 .71l.7.7c.2.2.51.2.71 0zm-13.88-13.88c.2-.2.2-.51 0-.71l-.7-.7c-.2-.2-.51-.2-.71 0-.2.2-.2.51 0 .71l.7.7c.2.2.51.2.71 0z" />
+                </svg>
+            </button>
+        </div>
+        <div class="lang-container">
+            <div class="lang-message">Not your language?</div>
+            <div id="lang-toggle" aria-label="Language toggle">
+                <button id="lang-switch" aria-pressed="false" aria-label="Toggle language">
+                    <span class="lang-text">EN</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div id="loading-overlay">
+        <div class="loader"></div>
+    </div>
+    <canvas id="background-animation"></canvas>
+    <div class="container">
+        <header id="header">
+            <!-- Динамически заполняется -->
+        </header>
+
+        <section aria-labelledby="welcome-heading">
+            <h1 id="welcome-heading" class="visually-hidden"></h1>
+            <p class="welcome-message" id="welcome-text"></p>
+        </section>
+
+        <section aria-labelledby="projects-heading">
+            <div class="section-header" onclick="toggleSection('projects')" role="button" tabindex="0"
+                aria-expanded="true" aria-controls="projects-content">
+                <h2 id="projects-heading"></h2>
+                <span class="toggle-icon expanded" aria-hidden="true">▼</span>
+            </div>
+            <div id="projects-content" class="section-content expanded" role="region"></div>
+        </section>
+
+        <section aria-labelledby="cv-heading">
+            <a href="/cv" class="cv-link">
+                <div class="section-header">
+                    <h2 id="cv-heading"></h2>
+                </div>
+            </a>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+    <script src="/static/js/index.js" type="module"></script>
+</body>
+
+</html>

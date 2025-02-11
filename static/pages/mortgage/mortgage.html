@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Онлайн ипотечный калькулятор для точного расчета ежемесячных платежей, переплаты и графика погашения. Рассчитайте ипотеку с учетом различных параметров.">
+    <meta name="keywords"
+        content="ипотечный калькулятор, расчет ипотеки, график платежей, переплата по ипотеке, онлайн калькулятор">
+    <meta name="author" content="SalieriDev">
+    <meta property="og:title" content="Ипотечный калькулятор | Точный расчет ипотеки">
+    <meta property="og:description"
+        content="Онлайн ипотечный калькулятор для точного расчета ежемесячных платежей, переплаты и графика погашения.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <title>Ипотечный калькулятор | Точный расчет ипотеки</title>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Ипотечный калькулятор",
+        "description": "Онлайн калькулятор для расчета ипотечных платежей",
+        "applicationCategory": "FinancialApplication",
+        "operatingSystem": "Web",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "RUB"
+        }
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="/static/css/mortgage.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/static/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/static/assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/static/assets/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/static/assets/favicons/browserconfig.xml">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://salieri.dev/mortgage/mortgage.html">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Главная",
+            "item": "https://salieri.dev"
+        }, {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ипотечный калькулятор",
+            "item": "https://salieri.dev/mortgage/mortgage.html"
+        }]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FinancialCalculator",
+        "name": "Ипотечный калькулятор",
+        "description": "Калькулятор для расчета ипотечных платежей, процентов и графика погашения",
+        "url": "https://salieri.dev/mortgage/mortgage.html",
+        "category": "Mortgage Calculator",
+        "inLanguage": "ru-RU",
+        "interactionCount": "UseWithCount"
+    }
+    </script>
+</head>
+
+<body itemscope itemtype="https://schema.org/WebPage">
+    <div class="page-container" role="main">
+        <div class="sidebar" id="sidebar">
+            <h3>Содержание</h3>
+            <ul>
+                <li><a href="#monthly">Ежемесячные платежи</a></li>
+                <li><a href="#total">Итоговые значения</a></li>
+                <li><a href="#analysis">Анализ платежей</a></li>
+                <li><a href="#params">Основные параметры</a></li>
+                <li><a href="#time">Временные параметры</a></li>
+                <li><a href="#charts">Графики и анализ</a></li>
+                <li><a href="#schedule">График платежей</a></li>
+            </ul>
+        </div>
+        <div class="top-buttons">
+            <button class="menu-button" id="menuButton">☰</button>
+            <a href="/" class="return-button" aria-label="Вернуться на главную страницу">← На главную</a>
+            <div class="lang-container">
+                <div class="lang-message">Not your language?</div>
+                <button id="langSwitch" class="lang-switch">EN</button>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="container">
+                <h1 itemprop="headline" aria-label="Ипотечный калькулятор">Ипотечный калькулятор</h1>
+                <div class="disclaimer" role="note" aria-label="Информация о конфиденциальности">
+                    ⚡ Все расчеты производятся локально в вашем браузере. Мы не сохраняем и не передаем ваши данные на
+                    сервер.
+                </div>
+                <div class="calculator-info" itemscope itemtype="https://schema.org/FinancialProduct">
+                    <meta itemprop="name" content="Ипотечный калькулятор">
+                    <meta itemprop="description" content="Онлайн калькулятор для расчета ипотечных платежей">
+                    <meta itemprop="category" content="Финансовые услуги">
+                </div>
+
+                <div class="form-group" role="form" aria-label="Форма ипотечного калькулятора">
+                    <label for="monthlyIncome">Ежемесячный доход (₽)</label>
+                    <input type="number" id="monthlyIncome" value="350000">
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Возраст</label>
+                    <input type="number" id="age" value="23">
+                </div>
+
+                <div class="form-group">
+                    <label for="apartmentCost">Стоимость квартиры (₽)</label>
+                    <input type="number" id="apartmentCost" value="34800000">
+                </div>
+
+                <div class="form-group">
+                    <label for="downPaymentPercent">Первоначальный взнос (%)</label>
+                    <input type="number" id="downPaymentPercent" value="43.1" step="0.1">
+                </div>
+
+                <div class="form-group">
+                    <label for="annualRate">Годовая ставка (%)</label>
+                    <input type="number" id="annualRate" value="24" step="0.1">
+                </div>
+
+                <div class="form-group">
+                    <label for="years">Срок кредита (лет)</label>
+                    <input type="number" id="years" value="5">
+                </div>
+
+                <button onclick="calculateMortgage()" aria-label="Рассчитать ипотеку">Рассчитать</button>
+
+                <div class="results" id="results" style="display: none;">
+                    <div id="monthly" class="section">
+                        <h2>Ежемесячные платежи</h2>
+                        <div id="monthlyParams"></div>
+                    </div>
+
+                    <div id="total" class="section">
+                        <h2>Итоговые значения</h2>
+                        <div id="totalValues"></div>
+                    </div>
+
+                    <div id="analysis" class="section">
+                        <h2>Анализ платежей</h2>
+                        <div id="paymentAnalysis"></div>
+                    </div>
+
+                    <div id="params" class="section">
+                        <h2>Основные параметры кредита</h2>
+                        <div id="mainParams"></div>
+                    </div>
+
+                    <div id="time" class="section">
+                        <h2>Временные параметры</h2>
+                        <div id="timeParams"></div>
+                    </div>
+
+                    <div id="charts" class="section">
+                        <h2>Графики и анализ</h2>
+                        <div class="charts">
+                            <div class="chart-container" data-chart="paymentStructureChart">
+                                <canvas id="paymentStructureChart"></canvas>
+                            </div>
+                            <div class="chart-container" data-chart="balanceChart">
+                                <canvas id="balanceChart"></canvas>
+                            </div>
+                            <div class="chart-container full-width" data-chart="earlyPaymentImpact">
+                                <canvas id="earlyPaymentImpact"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="schedule" class="section">
+                        <h2>График платежей</h2>
+                        <div class="payment-schedule-wrapper">
+                            <table class="payment-schedule" id="paymentSchedule">
+                                <thead>
+                                    <tr>
+                                        <th>Месяц</th>
+                                        <th>Платеж</th>
+                                        <th>Проценты</th>
+                                        <th>Основной долг</th>
+                                        <th>Остаток</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/static/js/ui-handlers.js"></script>
+</body>
+
+</html>
