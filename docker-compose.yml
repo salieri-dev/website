@@ -1,11 +1,17 @@
 services:
   web:
     build: .
-    command: fastapi run app --port 80 --host 0.0.0.0
+    command: fastapi run app --port 3333 --host 0.0.0.0 --reload
     volumes:
       - .:/app
     ports:
-      - "80:80"
+      - "3333:3333"
     environment:
       - ENVIRONMENT=development
     restart: unless-stopped
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true

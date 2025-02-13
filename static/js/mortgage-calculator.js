@@ -1,3 +1,5 @@
+import { formatCurrency } from './formatters.js';
+
 class MortgageCalculator {
     constructor(params) {
         this.params = params;
@@ -194,21 +196,28 @@ class MortgageCalculator {
 
     validateLoanParameters() {
         try {
-            if (this.params.years > 50) {
-                throw new Error(`Срок ${this.params.years} лет превышает разумный предел в 50 лет`);
+            // Check if all parameters are valid numbers
+            if (isNaN(this.params.years) || this.params.years <= 0) {
+                throw new Error('Invalid loan term');
             }
-
-            if (this.params.annualRate > 30) {
-                throw new Error(`Годовая ставка ${this.params.annualRate}% превышает разумный предел в 30%`);
+            if (isNaN(this.params.annualRate) || this.params.annualRate <= 0) {
+                throw new Error('Invalid annual rate');
             }
-
-            const minDownPayment = 10;
-            if (this.params.downPaymentPercent < minDownPayment) {
-                throw new Error(`Первоначальный взнос ${this.params.downPaymentPercent}% меньше минимального ${minDownPayment}%`);
+            if (isNaN(this.params.downPaymentPercent) || this.params.downPaymentPercent < 0 || this.params.downPaymentPercent >= 100) {
+                throw new Error('Invalid down payment percentage');
+            }
+            if (isNaN(this.params.apartmentCost) || this.params.apartmentCost <= 0) {
+                throw new Error('Invalid apartment cost');
+            }
+            if (isNaN(this.params.monthlyIncome) || this.params.monthlyIncome <= 0) {
+                throw new Error('Invalid monthly income');
+            }
+            if (isNaN(this.params.age) || this.params.age < 0) {
+                throw new Error('Invalid age');
             }
         } catch (error) {
             this.performance.errors++;
-            throw new Error(`Ошибка валидации параметров: ${error.message}`);
+            throw new Error(`Parameter validation error: ${error.message}`);
         }
     }
 

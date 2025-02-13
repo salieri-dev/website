@@ -72,9 +72,11 @@ export async function setLanguage(lang) {
     const form = document.querySelector('.form-group[role="form"]');
     form.setAttribute('aria-label', t.ui.aria.form);
 
-    const calcButton = document.querySelector('button[onclick="calculateMortgage()"]');
-    calcButton.textContent = t.ui.calculate;
-    calcButton.setAttribute('aria-label', t.ui.aria.calculate);
+    const calcButton = document.querySelector('button[onclick]');
+    if (calcButton) {
+        calcButton.textContent = t.ui.calculate;
+        calcButton.setAttribute('aria-label', t.ui.aria.calculate);
+    }
 
     document.querySelector('#sidebar h3').textContent = t.ui.contents;
 

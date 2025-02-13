@@ -10,6 +10,9 @@ import { MortgageCalculator } from './mortgage-calculator.js';
 // Initialize language system
 await initializeLanguage();
 
+// Add calculate button click handler
+document.getElementById('calculateButton').addEventListener('click', calculateMortgage);
+
 // Menu button functionality
 const menuButton = document.getElementById('menuButton');
 const sidebar = document.getElementById('sidebar');

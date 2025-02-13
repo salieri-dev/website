@@ -31,6 +31,7 @@
     }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="/static/js/ui-handlers.js"></script>
     <link rel="stylesheet" href="/static/css/mortgage.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/static/assets/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/static/assets/favicons/favicon-32x32.png">
@@ -138,7 +139,7 @@
                     <input type="number" id="years" value="5">
                 </div>
 
-                <button onclick="calculateMortgage()" aria-label="Рассчитать ипотеку">Рассчитать</button>
+                <button id="calculateButton" aria-label="Рассчитать ипотеку">Рассчитать</button>
 
                 <div class="results" id="results" style="display: none;">
                     <div id="monthly" class="section">
