@@ -72,8 +72,8 @@
         "interestPayment": "Платёж по процентам",
         "principalPayment": "Платёж по телу кредита",
         "totalPayments": "Общая сумма выплат",
-        "totalInterest": "Переплата по процентам",
-        "overpaymentToLoan": "Переплата относительно суммы кредита",
+        "totalInterest": "Заплатишь сверх кредита",
+        "overpaymentToLoan": "Заплатишь с кредитом и с процентами",
         "overpaymentToPrice": "Переплата относительно стоимости квартиры"
     },
     "schedule": {
