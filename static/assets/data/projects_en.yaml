@@ -1,0 +1,13 @@
+projects:
+  - name: Mortgage Calculator
+    url: /mortgage  
+    description: A tool for detailed calculation and analysis of mortgage payments
+    icon: "mortgage.png"
+    tags:
+      - Housing Purchase
+  - name: not_salieri_bot
+    url: t.me/not_salieri_bot
+    description: Telegram bot for generating images and fun activities with 300 monthly active users
+    icon: "logo.png"
+    tags:
+      - Python

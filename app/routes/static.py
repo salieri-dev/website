@@ -19,10 +19,3 @@ async def read_mortgage():
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-
-@router.get("/cv")
-async def read_cv():
-    try:
-        return FileResponse("static/pages/cv/cv.html")
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))

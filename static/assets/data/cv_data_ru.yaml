@@ -1,0 +1,145 @@
+first_name: Александр
+last_name: Кудряшов
+title: Системный аналитик
+
+contact:
+  - type:
+      id: telegram
+      name: Telegram
+    value: salieri
+  - type:
+      id: email
+      name: Эл. почта
+    value: hello@salieri.dev
+  - type:
+      id: github
+      name: GitHub
+    value: htkg
+skill_set:
+  Core Languages & Databases:
+    - SQL
+    - Python
+    - PostgreSQL 
+    - MongoDB
+    - Cassandra
+    - Redis
+    - MySQL
+    - C#
+    
+  Analysis & Modeling:
+    - BPMN
+    - IDEF0
+    - UML
+    - ERD
+    - Use Cases
+    - User Stories
+    - Gherkin Syntax
+    - PlantUML
+    - SOLID
+    - CASE-анализ
+    - SWOT анализ
+    - Системный анализ
+    - Бизнес-анализ
+
+  Architecture & Design:
+    - ELK
+    - ETL
+    - DWH
+    - Data Lake
+    - Data Mesh 
+    - Data Warehouse
+    - Микросервисная архитектура
+    - Монолитная архитектура
+    - Событийно-ориентированная архитектура
+    - Распределенная архитектура
+    - SaaS
+    - Serverless
+    - CQRS
+    - Saga Pattern
+
+  Infrastructure & DevOps:
+    - Docker
+    - Docker Compose
+    - Kubernetes
+    - OpenShift
+    - WildFly
+    - Nginx
+    - Debian / Ubuntu
+    - Git
+    - GitFlow
+    - CI/CD
+
+  APIs & Integration:
+    - REST
+    - SOAP
+    - gRPC
+    - GraphQL
+    - OpenAPI
+    - Swagger
+    - Protobuf
+    - JSON
+    - JSON Schema
+    - XML
+    - XSD
+    - WSDL
+    - Postman
+
+  Message Brokers:
+    - Apache Kafka
+    - RabbitMQ
+    - Celery
+    - Redis Queue
+
+  Monitoring & Analytics:
+    - Prometheus
+    - Grafana
+    - Elastic
+    - A/B тестирование
+
+  Security:
+    - SSL
+    - TLS
+    - CA
+    - OpenVPN
+    - Инфобезопасность
+
+  Testing:
+    - UAT тестирование
+    - UI тестирование
+    - UX тестирование  
+    - Stress тестирование
+    - Unit тестирование
+    - Нагрузочное тестирование
+
+  Python Libraries:
+    - Pandas
+    - FastAPI
+    - Numpy
+    - Torch
+    - Keras
+    - Plotly
+    - Matplotlib
+    - Scrapy
+    - Beautiful Soup
+    - Scikit-Learn
+    - Selenium
+    - Seaborn
+    - NetworkX
+
+  Project Management:
+    - Agile
+    - Scrum
+    - Kanban
+    - Jira
+    - Confluence  
+    - Miro
+    - Figma
+    - Draw.io
+
+  Requirements Engineering:
+    - Функциональные требования
+    - Нефункциональные требования
+    - Разработка технических заданий
+    - Атрибуты качества
+    - Анализ требований
+    - Бизнес-требования

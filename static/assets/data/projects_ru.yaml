@@ -1,0 +1,13 @@
+projects:
+  - name: Ипотечный калькулятор
+    url: /mortgage  
+    description: Инструмент для детального расчета и анализа ипотечных платежей
+    icon: "mortgage.png"
+    tags:
+      - Покупка жилья
+  - name: Theta Project
+    url: t.me/not_salieri_bot
+    description: Творческий Telegram-бот для общения и развлечения с более чем 300 активными пользователями в месяц
+    icon: "logo.png"
+    tags:
+      - Python

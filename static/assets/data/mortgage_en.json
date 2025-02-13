@@ -1,0 +1,136 @@
+{
+    "meta": {
+        "title": "Mortgage Calculator | Precise Mortgage Calculation",
+        "description": "Online mortgage calculator for accurate calculation of monthly payments, overpayment, and payment schedule",
+        "keywords": "mortgage calculator, mortgage calculation, payment schedule, mortgage overpayment, online calculator",
+        "locale": "en_US",
+        "schema": {
+            "app": {
+                "name": "Mortgage Calculator",
+                "description": "Online calculator for mortgage payment calculations",
+                "currency": "USD",
+                "category": "Financial Services"
+            },
+            "breadcrumb": {
+                "home": "Home",
+                "calculator": "Mortgage Calculator"
+            }
+        }
+    },
+    "ui": {
+        "title": "Mortgage Calculator",
+        "returnHome": "Return Home",
+        "calculate": "Calculate",
+        "disclaimer": "⚡ All calculations are performed locally in your browser. We do not store or transmit your data to the server.",
+        "contents": "Contents",
+        "aria": {
+            "returnHome": "Return to homepage",
+            "calculator": "Mortgage Calculator",
+            "privacy": "Privacy Information",
+            "form": "Mortgage Calculator Form",
+            "calculate": "Calculate Mortgage"
+        }
+    },
+    "sections": {
+        "monthlyPayments": "Monthly Payments",
+        "totalValues": "Total Values",
+        "paymentAnalysis": "Payment Analysis",
+        "mainParams": "Main Parameters",
+        "timeParams": "Time Parameters",
+        "charts": "Charts and Analysis",
+        "schedule": "Payment Schedule"
+    },
+    "inputs": {
+        "monthlyIncome": "Monthly Income ($)",
+        "age": "Age",
+        "apartmentCost": "Property Cost ($)",
+        "downPaymentPercent": "Down Payment (%)",
+        "annualRate": "Annual Rate (%)",
+        "years": "Loan Term (years)"
+    },
+    "results": {
+        "apartmentCost": "Property Cost",
+        "downPayment": "Down Payment",
+        "loanAmount": "Loan Amount",
+        "loanTerm": "Loan Term",
+        "years": "years",
+        "months": "months",
+        "annualRate": "Annual Rate",
+        "monthlyRate": "Monthly Rate",
+        "ageAtStart": "Age at Loan Start",
+        "ageAtEnd": "Age at Loan Completion",
+        "completionDate": "Full Repayment Date",
+        "year": "year",
+        "monthlyIncome": "Monthly Income",
+        "monthlyPayment": "Monthly Payment",
+        "remainingMoney": "Remaining Money",
+        "paymentToIncome": "Payment is",
+        "ofIncome": "of income",
+        "firstPayment": "First Payment",
+        "lastPayment": "Last Payment",
+        "totalAmount": "Total Amount",
+        "interestPayment": "Interest Payment",
+        "principalPayment": "Principal Payment",
+        "totalPayments": "Total Payments",
+        "totalInterest": "Total Interest",
+        "overpaymentToLoan": "Overpayment Relative to Loan",
+        "overpaymentToPrice": "Overpayment Relative to Price"
+    },
+    "schedule": {
+        "month": "Month",
+        "payment": "Payment",
+        "interest": "Interest",
+        "principal": "Principal",
+        "remaining": "Remaining"
+    },
+    "charts": {
+        "monthlyStructure": {
+            "title": "Monthly Payment Structure",
+            "principal": "Principal",
+            "interest": "Interest",
+            "month": "Month",
+            "amount": "Payment Amount ($)"
+        },
+        "balance": {
+            "title": "Principal Balance Schedule",
+            "remaining": "Remaining Balance",
+            "month": "Month",
+            "amount": "Remaining Balance ($)"
+        },
+        "earlyPayment": {
+            "title": "Early Payment Impact (+10% payment)",
+            "regular": "Regular Schedule",
+            "early": "With Early Payments",
+            "month": "Month",
+            "amount": "Remaining Balance ($)"
+        }
+    },
+    "status": {
+        "downPayment": {
+            "excellent": "Excellent down payment!",
+            "good": "Good down payment",
+            "minimum": "Minimum down payment"
+        },
+        "paymentToIncome": {
+            "comfortable": "Comfortable payment",
+            "high": "High burden",
+            "critical": "Critical burden"
+        },
+        "age": {
+            "optimal": "Optimal age",
+            "limit": "Age limit",
+            "exceeded": "Age exceeded"
+        },
+        "rate": {
+            "excellent": "Excellent rate",
+            "normal": "Normal rate",
+            "high": "High rate",
+            "veryHigh": "Very high rate"
+        },
+        "overpayment": {
+            "low": "Low overpayment",
+            "medium": "Medium overpayment",
+            "high": "High overpayment"
+        }
+    }
+}

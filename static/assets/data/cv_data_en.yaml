@@ -1,0 +1,146 @@
+first_name: Alexander
+last_name: Kudryashov
+title: Systems Analyst
+
+contact:
+  - type:
+      id: telegram
+      name: Telegram
+    value: salieri
+  - type:
+      id: email
+      name: Email
+    value: hello@salieri.dev
+  - type:
+      id: github
+      name: GitHub
+    value: htkg
+
+skill_set:
+  Core Languages & Databases:
+    - SQL
+    - Python
+    - PostgreSQL 
+    - MongoDB
+    - Cassandra
+    - Redis
+    - MySQL
+    - C#
+    
+  Analysis & Modeling:
+    - BPMN
+    - IDEF0
+    - UML
+    - ERD
+    - Use Cases
+    - User Stories
+    - Gherkin Syntax
+    - PlantUML
+    - SOLID
+    - CASE Analysis
+    - SWOT Analysis
+    - Systems Analysis
+    - Business Analysis
+
+  Architecture & Design:
+    - ELK
+    - ETL
+    - DWH
+    - Data Lake
+    - Data Mesh 
+    - Data Warehouse
+    - Microservice Architecture
+    - Monolithic Architecture
+    - Event-Driven Architecture
+    - Distributed Architecture
+    - SaaS
+    - Serverless
+    - CQRS
+    - Saga Pattern
+
+  Infrastructure & DevOps:
+    - Docker
+    - Docker Compose
+    - Kubernetes
+    - OpenShift
+    - WildFly
+    - Nginx
+    - Debian / Ubuntu
+    - Git
+    - GitFlow
+    - CI/CD
+
+  APIs & Integration:
+    - REST
+    - SOAP
+    - gRPC
+    - GraphQL
+    - OpenAPI
+    - Swagger
+    - Protobuf
+    - JSON
+    - JSON Schema
+    - XML
+    - XSD
+    - WSDL
+    - Postman
+
+  Message Brokers:
+    - Apache Kafka
+    - RabbitMQ
+    - Celery
+    - Redis Queue
+
+  Monitoring & Analytics:
+    - Prometheus
+    - Grafana
+    - Elastic
+    - A/B Testing
+
+  Security:
+    - SSL
+    - TLS
+    - CA
+    - OpenVPN
+    - Information Security
+
+  Testing:
+    - UAT Testing
+    - UI Testing
+    - UX Testing  
+    - Stress Testing
+    - Unit Testing
+    - Load Testing
+
+  Python Libraries:
+    - Pandas
+    - FastAPI
+    - Numpy
+    - Torch
+    - Keras
+    - Plotly
+    - Matplotlib
+    - Scrapy
+    - Beautiful Soup
+    - Scikit-Learn
+    - Selenium
+    - Seaborn
+    - NetworkX
+
+  Project Management:
+    - Agile
+    - Scrum
+    - Kanban
+    - Jira
+    - Confluence  
+    - Miro
+    - Figma
+    - Draw.io
+
+  Requirements Engineering:
+    - Functional Requirements
+    - Non-functional Requirements
+    - Technical Specifications Development
+    - Quality Attributes
+    - Requirements Analysis
+    - Business Requirements
