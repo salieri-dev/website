@@ -74,7 +74,8 @@
         "totalPayments": "Total Payments",
         "totalInterest": "Total Interest",
         "overpaymentToLoan": "Overpayment Relative to Loan",
-        "overpaymentToPrice": "Overpayment Relative to Price"
+        "overpaymentToPrice": "Overpayment Relative to Price",
+        "selfSaving": "Self-saving Period (years)"
     },
     "schedule": {
         "month": "Month",

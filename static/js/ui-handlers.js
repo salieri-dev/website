@@ -126,6 +126,7 @@ function updateResults(calculator) {
     // Total values
     const overpaymentPercent = (summary.totalInterest / summary.loanAmount * 100).toFixed(1);
     document.getElementById('totalValues').innerHTML = `
+        <p>${getTranslation('results.selfSaving')}: <span class="highlight">${summary.selfSavingYears.toFixed(1)}</span></p>
         <p>${getTranslation('results.totalPayments')}: <span class="highlight">${formatCurrency(summary.totalPayment)}</span></p>
         <p>${getTranslation('results.totalInterest')}: <span class="highlight">${formatCurrency(summary.totalInterest)}</span></p>
         <p>${getTranslation('results.overpaymentToLoan')}: <span class="highlight">${overpaymentPercent}%</span>

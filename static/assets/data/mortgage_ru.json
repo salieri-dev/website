@@ -74,7 +74,8 @@
         "totalPayments": "Общая сумма выплат",
         "totalInterest": "Заплатишь сверх кредита",
         "overpaymentToLoan": "Заплатишь с кредитом и с процентами",
-        "overpaymentToPrice": "Переплата относительно стоимости квартиры"
+        "overpaymentToPrice": "Переплата относительно стоимости квартиры",
+        "selfSaving": "Накопить самому (лет)"
     },
     "schedule": {
         "month": "Месяц",
